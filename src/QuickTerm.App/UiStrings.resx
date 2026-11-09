@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="AppTitle" xml:space="preserve"><value>QuickTerm</value></data>
+  <data name="Settings" xml:space="preserve"><value>Settings</value></data>
+  <data name="Font" xml:space="preserve"><value>Font</value></data>
+  <data name="FontSize" xml:space="preserve"><value>Font size</value></data>
+  <data name="Theme" xml:space="preserve"><value>Theme</value></data>
+  <data name="Scrollback" xml:space="preserve"><value>Scrollback lines</value></data>
+  <data name="Language" xml:space="preserve"><value>Language</value></data>
+  <data name="FollowSystem" xml:space="preserve"><value>Follow system</value></data>
+  <data name="Copy" xml:space="preserve"><value>Copy</value></data>
+  <data name="Paste" xml:space="preserve"><value>Paste</value></data>
+  <data name="NewTerminal" xml:space="preserve"><value>New terminal</value></data>
+  <data name="Reconnect" xml:space="preserve"><value>Reconnect</value></data>
+  <data name="Disconnected" xml:space="preserve"><value>Disconnected</value></data>
+  <data name="ExitedWithCode" xml:space="preserve"><value>Process exited with code {0}</value></data>
+  <data name="FpsOverlay" xml:space="preserve"><value>{0:F0} fps · {1:F0} ms</value></data>
+  <data name="ScrollbackLabel" xml:space="preserve"><value>history</value></data>
+  <data name="FrameDamageLabel" xml:space="preserve"><value>rows/frame {0:0.##}</value></data>
+  <data name="PtyStartFailed" xml:space="preserve"><value>Terminal could not start: {0}</value></data>
+  <data name="SettingsLoadFailed" xml:space="preserve"><value>Settings file could not be read ({0}); defaults are in use.</value></data>
+  <data name="NewLocalSession" xml:space="preserve"><value>New local session</value></data>
+  <data name="SessionName" xml:space="preserve"><value>Name</value></data>
+  <data name="Shell" xml:space="preserve"><value>Shell</value></data>
+  <data name="StartDirectory" xml:space="preserve"><value>Start directory</value></data>
+  <data name="Browse" xml:space="preserve"><value>Browse…</value></data>
+  <data name="SystemDefaultShell" xml:space="preserve"><value>System default</value></data>
+  <data name="Confirm" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="DirectoryMissing" xml:space="preserve"><value>That directory does not exist.</value></data>
+  <data name="Local" xml:space="preserve"><value>Local</value></data>
+  <data name="SaveFailed" xml:space="preserve"><value>Could not save settings: {0}</value></data>
+  <data name="MyHosts" xml:space="preserve"><value>My hosts</value></data>
+  <data name="Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="HostMissing" xml:space="preserve"><value>This host has no address yet.</value></data>
+  <data name="RdpLaunchFailed" xml:space="preserve"><value>Could not start mstsc: {0}</value></data>
+  <data name="Kind" xml:space="preserve"><value>Type</value></data>
+  <data name="Host" xml:space="preserve"><value>Host</value></data>
+  <data name="Port" xml:space="preserve"><value>Port</value></data>
+  <data name="Note" xml:space="preserve"><value>Note</value></data>
+  <data name="Group" xml:space="preserve"><value>Group</value></data>
+  <data name="AddManually" xml:space="preserve"><value>Add manually</value></data>
+  <data name="Rdp" xml:space="preserve"><value>RDP</value></data>
+  <data name="User" xml:space="preserve"><value>Username</value></data>
+  <data name="Password" xml:space="preserve"><value>Password</value></data>
+  <data name="RdpCredentialFailed" xml:space="preserve"><value>Could not save the RDP credential: {0}</value></data>
+  <data name="Edit" xml:space="preserve"><value>Edit</value></data>
+  <data name="Ssh" xml:space="preserve"><value>SSH</value></data>
+  <data name="AuthMethod" xml:space="preserve"><value>Authentication</value></data>
+  <data name="AuthPassword" xml:space="preserve"><value>Password</value></data>
+  <data name="AuthPrivateKey" xml:space="preserve"><value>Private key</value></data>
+  <data name="AuthAgent" xml:space="preserve"><value>Agent</value></data>
+  <data name="KeyPath" xml:space="preserve"><value>Key file</value></data>
+  <data name="Passphrase" xml:space="preserve"><value>Passphrase</value></data>
+  <data name="SshTransportNotReady" xml:space="preserve"><value>SSH transport is not wired yet — this host is saved and will connect once it lands.</value></data>
+  <data name="KeyFileMissing" xml:space="preserve"><value>That key file does not exist.</value></data>
+  <data name="SearchHosts" xml:space="preserve"><value>Search hosts…</value></data>
+  <data name="WelcomeHint" xml:space="preserve"><value>Pick a host on the left, or add one to get started.</value></data>
+  <data name="SettingsNotReady" xml:space="preserve"><value>The settings screen is not wired yet.</value></data>
+  <data name="NewHost" xml:space="preserve"><value>New host</value></data>
+  <data name="PaneProperties" xml:space="preserve"><value>Properties</value></data>
+  <data name="PaneTerminal" xml:space="preserve"><value>Terminal</value></data>
+  <data name="SshHostKeyTitle" xml:space="preserve"><value>Unknown host key</value></data>
+  <data name="SshHostKeyQuestion" xml:space="preserve"><value>The host key for {0} is not known yet. SHA256 fingerprint: {1}. Trust this key and continue?</value></data>
+  <data name="TrustHost" xml:space="preserve"><value>Trust host</value></data>
+  <data name="SshPasswordTitle" xml:space="preserve"><value>SSH password</value></data>
+  <data name="SshNoPassword" xml:space="preserve"><value>No password was provided for this host.</value></data>
+  <data name="SftpTitle" xml:space="preserve"><value>File transfer</value></data>
+  <data name="SftpNeedSsh" xml:space="preserve"><value>File transfer needs an active SSH session.</value></data>
+  <data name="Up" xml:space="preserve"><value>Up</value></data>
+  <data name="Open" xml:space="preserve"><value>Open</value></data>
+  <data name="MenuTransfer" xml:space="preserve"><value>Transfer</value></data>
+  <data name="MenuEdit" xml:space="preserve"><value>Edit</value></data>
+  <data name="MenuCopy" xml:space="preserve"><value>Copy</value></data>
+  <data name="MenuPaste" xml:space="preserve"><value>Paste</value></data>
+  <data name="MenuCopyPath" xml:space="preserve"><value>Copy path</value></data>
+  <data name="MenuOpenInManager" xml:space="preserve"><value>Open in file manager</value></data>
+  <data name="MenuRename" xml:space="preserve"><value>Rename</value></data>
+  <data name="MenuDelete" xml:space="preserve"><value>Delete</value></data>
+  <data name="MenuRefresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="MenuNew" xml:space="preserve"><value>New</value></data>
+  <data name="NewFolder" xml:space="preserve"><value>Folder</value></data>
+  <data name="NewFile" xml:space="preserve"><value>File</value></data>
+  <data name="DeleteConfirmQuestion" xml:space="preserve"><value>Delete {0}?</value></data>
+  <data name="RenameTitle" xml:space="preserve"><value>Rename</value></data>
+  <data name="NamePrompt" xml:space="preserve"><value>Name</value></data>
+  <data name="PaneGeneral" xml:space="preserve"><value>General</value></data>
+  <data name="PaneBackground" xml:space="preserve"><value>Background</value></data>
+  <data name="PaneAbout" xml:space="preserve"><value>About</value></data>
+  <data name="BackgroundImage" xml:space="preserve"><value>Background image</value></data>
+  <data name="FillMode" xml:space="preserve"><value>Fill mode</value></data>
+  <data name="Opacity" xml:space="preserve"><value>Opacity (%)</value></data>
+  <data name="Clear" xml:space="preserve"><value>Clear</value></data>
+  <data name="FitUniform" xml:space="preserve"><value>Fit</value></data>
+  <data name="FitFill" xml:space="preserve"><value>Fill</value></data>
+  <data name="FitStretch" xml:space="preserve"><value>Stretch</value></data>
+  <data name="FitTile" xml:space="preserve"><value>Tile</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="Download" xml:space="preserve"><value>Download</value></data>
+  <data name="Upload" xml:space="preserve"><value>Upload</value></data>
+  <data name="Transferring" xml:space="preserve"><value>Transferring…</value></data>
+  <data name="Editing" xml:space="preserve"><value>Editing (saves upload back)…</value></data>
+  <data name="TransferDone" xml:space="preserve"><value>Done.</value></data>
+  <data name="TransferFailed" xml:space="preserve"><value>Transfer failed: {0}</value></data>
+  <data name="ColName" xml:space="preserve"><value>Name</value></data>
+  <data name="ColType" xml:space="preserve"><value>Type</value></data>
+  <data name="ColSize" xml:space="preserve"><value>Size</value></data>
+  <data name="ColMtime" xml:space="preserve"><value>Modified</value></data>
+  <data name="ColPerm" xml:space="preserve"><value>Permissions</value></data>
+  <data name="FolderType" xml:space="preserve"><value>Folder</value></data>
+  <data name="FileType" xml:space="preserve"><value>File</value></data>
+  <data name="QueueName" xml:space="preserve"><value>Name</value></data>
+  <data name="QueueStatus" xml:space="preserve"><value>Status</value></data>
+  <data name="QueueProgress" xml:space="preserve"><value>Progress</value></data>
+  <data name="QueueSize" xml:space="preserve"><value>Size</value></data>
+  <data name="QueueSource" xml:space="preserve"><value>Source</value></data>
+  <data name="QueueDest" xml:space="preserve"><value>Destination</value></data>
+</root>

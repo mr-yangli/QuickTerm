@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- TFM/LangVersion/Nullable/ImplicitUsings 见 term/Directory.Build.props -->
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\QuickTerm.Terminal\QuickTerm.Terminal.csproj" />
+    <ProjectReference Include="..\..\src\QuickTerm.Pty\QuickTerm.Pty.csproj" />
+  </ItemGroup>
+
+</Project>

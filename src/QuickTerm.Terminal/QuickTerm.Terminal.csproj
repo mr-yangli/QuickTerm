@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- TFM/LangVersion/Nullable/ImplicitUsings 见 term/Directory.Build.props -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+
+    <PackageId>QuickTerm.Terminal</PackageId>
+    <!-- 本族不上 NuGet（2026-11-05 定：不用nuget）：分发随仓库源码与自包含产物走，PackageId/Description
+         留着只作身份文档，不建公开包。IsPackable=false 因此是终态而不是 P0 临时。
+         注意这条不改另一条——"内核零第三方依赖"照旧，它与发不发包无关。 -->
+    <IsPackable>false</IsPackable>
+    <!-- AOT 是本族的目标形态（2026-11-05 定），trim/AOT 分析器 + 警告即错误按 sql 家的形状开在源码颗上；
+         测试与基准那颗不开（xunit v2 自己就不干净）。 -->
+    <IsAotCompatible>true</IsAotCompatible>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Description>Zero-dependency VT100/XTerm terminal engine for .NET 10: allocation-light escape-sequence state machine, cell grid with scroll region, alternate screen and scrollback, damage tracking for a repaint pass, East Asian wide-character handling and DEC special graphics. AOT-clean by gate, not by claim. P0 subset — see term/docs/quickterm-p0-plan.md.</Description>
+    <PackageTags>terminal;vt100;xterm;emulator;ansi;escape-sequences</PackageTags>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+</Project>

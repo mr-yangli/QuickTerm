@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/QuickTerm.Terminal/QuickTerm.Terminal.csproj" />
+    <Project Path="src/QuickTerm.Pty/QuickTerm.Pty.csproj" />
+    <Project Path="src/QuickTerm.App/QuickTerm.App.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/QuickTerm.Tests/QuickTerm.Tests.csproj" />
+  </Folder>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/QuickTerm.Benchmarks/QuickTerm.Benchmarks.csproj" />
+  </Folder>
+</Solution>

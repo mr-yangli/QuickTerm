@@ -1,0 +1,37 @@
+<Project>
+
+  <!-- 由原 QuickNet 单仓拆出为独立仓：作者/许可/仓库地址内联自原根 Directory.Build.props，
+       仓库地址指向本家独立仓（GitHub: mr-yangli）。 -->
+  <PropertyGroup>
+    <Authors>YANGLI</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/mr-yangli/QuickTerm</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/mr-yangli/QuickTerm.git</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Tmds.Ssh 把它开发期的 PublicApiAnalyzers 漏给消费者（nuspec 标了 exclude 仍流进 csc；
+         ExcludeAssets 与显式引用排除都实测压不住），凡引用 App 的颗（App/Tests）都会被刷 RS0016/RS0037。
+         本族不维护 PublicAPI.txt，这两条诊断无意义，子树定向静音；其余分析器照旧。上游修好后删本行。 -->
+    <NoWarn>$(NoWarn);RS0016;RS0037</NoWarn>
+  </PropertyGroup>
+
+  <!-- 本族的家规比另五族更吃紧一条：内核两颗（QuickTerm.Terminal / QuickTerm.Pty）零 NuGet 依赖，
+       只允许 P/Invoke 到操作系统自己的库（kernel32 / libc）。GUI 只准出现在 QuickTerm.App 那一颗。
+       理由：终端内核未来要被 SSH/SFTP 面、无头基准和别人的宿主直接引用，不能被 GUI 依赖拖住——
+       与把"渲染"和"文档模型"分家是同一个道理。 -->
+  <PropertyGroup>
+    <Version>0.1.0-beta.1</Version>
+    <PackageTags>terminal;vt100;xterm;pty;conpty</PackageTags>
+    <!-- 本族不上 NuGet（2026-11-05 定：不用nuget），所以不挂 PackageReadmeFile、不建 usage.md、
+         也不进另五族那条"版本同步 N 处"的发包链路——那颗 README 与安装文档里的 PackageReference
+         对本族一律不适用。<Version> 留着是给程序集身份和本机产物用，不是公开包序列。
+         迁移独立仓库时（计划 §6 第 3 条的五步清单）这一格要一起重看：如果那时改走私有源或内网包，
+         家规里"零依赖"那条不变，发包面却要整重做。 -->
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- TFM/LangVersion/Nullable/ImplicitUsings 见 term/Directory.Build.props -->
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\QuickTerm.Terminal\QuickTerm.Terminal.csproj" />
+    <ProjectReference Include="..\..\src\QuickTerm.Pty\QuickTerm.Pty.csproj" />
+    <!-- 中英两档的契约要有账：每个键在两档都答得出、缺档回落英文而不是空白。引用这颗 WinExe 是刻意的
+         （与 Dashboard 读 QuickJob.Tests 同一条糖），顺带把"资源基名硬写会抛"这类坑钉死。 -->
+    <ProjectReference Include="..\..\src\QuickTerm.App\QuickTerm.App.csproj" />
+  </ItemGroup>
+
+</Project>

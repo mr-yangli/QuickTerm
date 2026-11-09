@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- TFM/LangVersion/Nullable/ImplicitUsings 见 term/Directory.Build.props -->
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>QuickTerm</AssemblyName>
+    <RootNamespace>QuickTerm.App</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <!-- 本族唯一的 GUI 颗，永不发包（家规见 term/Directory.Build.props）。
+         BuiltInComInteropSupport=false 是 Avalonia 官方 Native AOT 文档要求的开关前置；
+         现在就把形状对上，等 C++ 工作负载装齐（任务 #9）再补一次 AOT 实测。 -->
+    <BuiltInComInteropSupport>false</BuiltInComInteropSupport>
+    <!-- DPAPI 的 LibraryImport 形状要 unsafe 才能拿到返回缓冲区的指针（家规：P/Invoke 优先
+         LibraryImport + 直读，不用 DllImport + 中间数组拷贝）。范围只开在这一颗，内核两颗照旧不开。 -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 宿主侧的内部件（RdpLauncher 这种纯函数）要能被测试册直接钉住，同时不进公开面：
+         这是本族第一次开 InternalsVisibleTo，理由与内核那颗"没有读者就不留公开面"同一条。 -->
+    <InternalsVisibleTo Include="QuickTerm.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+    <PackageReference Include="Avalonia.Desktop" />
+    <PackageReference Include="Avalonia.Themes.Fluent" />
+    <PackageReference Include="Avalonia.Fonts.Inter" />
+    <!-- SSH 传输层只落在宿主颗；内核（Terminal/Pty）保持零 NuGet。
+         ExcludeAssets=analyzers：Tmds.Ssh 的开发期 PublicApiAnalyzers 不该流到消费者（它要一份
+         本族不维护的 PublicAPI.txt，流过来会把整颗刷成 RS0016/RS0037）。 -->
+    <PackageReference Include="Tmds.Ssh" ExcludeAssets="analyzers" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickTerm.Terminal\QuickTerm.Terminal.csproj" />
+    <ProjectReference Include="..\QuickTerm.Pty\QuickTerm.Pty.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 中英两档：English 是中性/源语言，zh-Hans 是卫星（清单见 UiStrings.Available）。
+         资源管理器按 typeof(UiStrings) 取基名——清单资源名带根命名空间前缀，硬写 "Ui" 会抛
+         MissingManifestResourceException，这条在本机实测过。 -->
+    <EmbeddedResource Update="UiStrings.resx" />
+    <EmbeddedResource Update="UiStrings.zh-Hans.resx" />
+  </ItemGroup>
+
+</Project>

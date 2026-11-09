@@ -1,0 +1,26 @@
+<Project>
+
+  <!-- term/ 子树的集中包管理（CPM）。内核两颗零 NuGet 依赖，所以这里只有 GUI 与测试的包：
+       Avalonia 12.1.5 四颗是 W2 那颗 QuickTerm.App 到场才有人引用（版本号已在本机 NuGet 实测可达，
+       先钉在这里是为了让"能不能拿到"这件事不占 W2 的时间）；xunit 2.9.3 与 job/pdf 同基线
+       （sql 的 v3 系只属于 sql 测试那家）。 -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Avalonia" Version="12.1.5" />
+    <PackageVersion Include="Avalonia.Desktop" Version="12.1.5" />
+    <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.1.5" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.5" />
+    <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3" />
+    <!-- SSH 传输层（P1/W3 候选里离线评估领先的一颗，见 docs 的 SSH 候选评估节）。只准出现在
+         QuickTerm.App；内核两颗零 NuGet 依赖的家规不动。 -->
+    <PackageVersion Include="Tmds.Ssh" Version="0.26.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.4" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>

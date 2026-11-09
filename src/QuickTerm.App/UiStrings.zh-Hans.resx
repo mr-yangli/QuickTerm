@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Settings" xml:space="preserve"><value>设置</value></data>
+  <data name="Font" xml:space="preserve"><value>字体</value></data>
+  <data name="FontSize" xml:space="preserve"><value>字号</value></data>
+  <data name="Theme" xml:space="preserve"><value>主题</value></data>
+  <data name="Scrollback" xml:space="preserve"><value>回滚行数</value></data>
+  <data name="Language" xml:space="preserve"><value>语言</value></data>
+  <data name="FollowSystem" xml:space="preserve"><value>跟随系统</value></data>
+  <data name="Copy" xml:space="preserve"><value>复制</value></data>
+  <data name="Paste" xml:space="preserve"><value>粘贴</value></data>
+  <data name="NewTerminal" xml:space="preserve"><value>新建终端</value></data>
+  <data name="Reconnect" xml:space="preserve"><value>重新连接</value></data>
+  <data name="Disconnected" xml:space="preserve"><value>已断开</value></data>
+  <data name="ExitedWithCode" xml:space="preserve"><value>进程已退出，代码 {0}</value></data>
+  <data name="FpsOverlay" xml:space="preserve"><value>{0:F0} 帧/秒 · {1:F0} 毫秒</value></data>
+  <data name="ScrollbackLabel" xml:space="preserve"><value>历史</value></data>
+  <data name="FrameDamageLabel" xml:space="preserve"><value>每帧脏行 {0:0.##}</value></data>
+  <data name="PtyStartFailed" xml:space="preserve"><value>终端启动失败：{0}</value></data>
+  <data name="SettingsLoadFailed" xml:space="preserve"><value>设置文件读不出来（{0}），已用默认值。</value></data>
+  <data name="NewLocalSession" xml:space="preserve"><value>新建本地会话</value></data>
+  <data name="SessionName" xml:space="preserve"><value>名称</value></data>
+  <data name="Shell" xml:space="preserve"><value>Shell</value></data>
+  <data name="StartDirectory" xml:space="preserve"><value>起始目录</value></data>
+  <data name="Browse" xml:space="preserve"><value>浏览…</value></data>
+  <data name="SystemDefaultShell" xml:space="preserve"><value>系统默认</value></data>
+  <data name="Confirm" xml:space="preserve"><value>确认</value></data>
+  <data name="Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="DirectoryMissing" xml:space="preserve"><value>这个目录不存在。</value></data>
+  <data name="Local" xml:space="preserve"><value>本地</value></data>
+  <data name="SaveFailed" xml:space="preserve"><value>设置保存失败：{0}</value></data>
+  <data name="MyHosts" xml:space="preserve"><value>我的主机</value></data>
+  <data name="Delete" xml:space="preserve"><value>删除</value></data>
+  <data name="HostMissing" xml:space="preserve"><value>这条主机还没有填地址。</value></data>
+  <data name="RdpLaunchFailed" xml:space="preserve"><value>启动 mstsc 失败：{0}</value></data>
+  <data name="Kind" xml:space="preserve"><value>类型</value></data>
+  <data name="Host" xml:space="preserve"><value>主机</value></data>
+  <data name="Port" xml:space="preserve"><value>端口</value></data>
+  <data name="Note" xml:space="preserve"><value>备注</value></data>
+  <data name="Group" xml:space="preserve"><value>分组</value></data>
+  <data name="AddManually" xml:space="preserve"><value>手动新增</value></data>
+  <data name="Rdp" xml:space="preserve"><value>RDP</value></data>
+  <data name="User" xml:space="preserve"><value>用户名</value></data>
+  <data name="Password" xml:space="preserve"><value>密码</value></data>
+  <data name="RdpCredentialFailed" xml:space="preserve"><value>RDP 凭据保存失败：{0}</value></data>
+  <data name="Edit" xml:space="preserve"><value>编辑</value></data>
+  <data name="Ssh" xml:space="preserve"><value>SSH</value></data>
+  <data name="AuthMethod" xml:space="preserve"><value>认证方式</value></data>
+  <data name="AuthPassword" xml:space="preserve"><value>密码</value></data>
+  <data name="AuthPrivateKey" xml:space="preserve"><value>私钥</value></data>
+  <data name="AuthAgent" xml:space="preserve"><value>Agent</value></data>
+  <data name="KeyPath" xml:space="preserve"><value>私钥文件</value></data>
+  <data name="Passphrase" xml:space="preserve"><value>密钥口令</value></data>
+  <data name="SshTransportNotReady" xml:space="preserve"><value>SSH 传输层尚未接入——主机已保存，接入后即可连接。</value></data>
+  <data name="KeyFileMissing" xml:space="preserve"><value>这个私钥文件不存在。</value></data>
+  <data name="SearchHosts" xml:space="preserve"><value>搜索主机…</value></data>
+  <data name="WelcomeHint" xml:space="preserve"><value>在左侧选一台主机，或新增一台开始使用。</value></data>
+  <data name="SettingsNotReady" xml:space="preserve"><value>设置界面尚未接入。</value></data>
+  <data name="NewHost" xml:space="preserve"><value>新建主机</value></data>
+  <data name="PaneProperties" xml:space="preserve"><value>属性</value></data>
+  <data name="PaneTerminal" xml:space="preserve"><value>终端</value></data>
+  <data name="SshHostKeyTitle" xml:space="preserve"><value>未知主机密钥</value></data>
+  <data name="SshHostKeyQuestion" xml:space="preserve"><value>{0} 的主机密钥尚未记录。SHA256 指纹：{1}。信任该密钥并继续？</value></data>
+  <data name="TrustHost" xml:space="preserve"><value>信任主机</value></data>
+  <data name="SshPasswordTitle" xml:space="preserve"><value>SSH 密码</value></data>
+  <data name="SshNoPassword" xml:space="preserve"><value>未提供该主机的密码。</value></data>
+  <data name="SftpTitle" xml:space="preserve"><value>文件传输</value></data>
+  <data name="SftpNeedSsh" xml:space="preserve"><value>文件传输需要一个活动的 SSH 会话。</value></data>
+  <data name="Up" xml:space="preserve"><value>上级</value></data>
+  <data name="Open" xml:space="preserve"><value>打开</value></data>
+  <data name="MenuTransfer" xml:space="preserve"><value>传输(T)</value></data>
+  <data name="MenuEdit" xml:space="preserve"><value>编辑(E)</value></data>
+  <data name="MenuCopy" xml:space="preserve"><value>复制</value></data>
+  <data name="MenuPaste" xml:space="preserve"><value>粘贴</value></data>
+  <data name="MenuCopyPath" xml:space="preserve"><value>复制路径</value></data>
+  <data name="MenuOpenInManager" xml:space="preserve"><value>在文件管理器中打开</value></data>
+  <data name="MenuRename" xml:space="preserve"><value>重命名(M)</value></data>
+  <data name="MenuDelete" xml:space="preserve"><value>删除(D)</value></data>
+  <data name="MenuRefresh" xml:space="preserve"><value>刷新(R)</value></data>
+  <data name="MenuNew" xml:space="preserve"><value>新建(W)</value></data>
+  <data name="NewFolder" xml:space="preserve"><value>文件夹</value></data>
+  <data name="NewFile" xml:space="preserve"><value>文件</value></data>
+  <data name="DeleteConfirmQuestion" xml:space="preserve"><value>确定删除 {0}？</value></data>
+  <data name="RenameTitle" xml:space="preserve"><value>重命名</value></data>
+  <data name="NamePrompt" xml:space="preserve"><value>名称</value></data>
+  <data name="PaneGeneral" xml:space="preserve"><value>常规</value></data>
+  <data name="PaneBackground" xml:space="preserve"><value>背景图</value></data>
+  <data name="PaneAbout" xml:space="preserve"><value>关于</value></data>
+  <data name="BackgroundImage" xml:space="preserve"><value>背景图</value></data>
+  <data name="FillMode" xml:space="preserve"><value>填充模式</value></data>
+  <data name="Opacity" xml:space="preserve"><value>透明度（%）</value></data>
+  <data name="Clear" xml:space="preserve"><value>清除</value></data>
+  <data name="FitUniform" xml:space="preserve"><value>适合</value></data>
+  <data name="FitFill" xml:space="preserve"><value>填充</value></data>
+  <data name="FitStretch" xml:space="preserve"><value>拉伸</value></data>
+  <data name="FitTile" xml:space="preserve"><value>平铺</value></data>
+  <data name="Refresh" xml:space="preserve"><value>刷新</value></data>
+  <data name="Download" xml:space="preserve"><value>下载</value></data>
+  <data name="Upload" xml:space="preserve"><value>上传</value></data>
+  <data name="Transferring" xml:space="preserve"><value>传输中…</value></data>
+  <data name="Editing" xml:space="preserve"><value>编辑中（保存自动传回）…</value></data>
+  <data name="TransferDone" xml:space="preserve"><value>完成。</value></data>
+  <data name="TransferFailed" xml:space="preserve"><value>传输失败：{0}</value></data>
+  <data name="ColName" xml:space="preserve"><value>文件名</value></data>
+  <data name="ColType" xml:space="preserve"><value>类型</value></data>
+  <data name="ColSize" xml:space="preserve"><value>大小</value></data>
+  <data name="ColMtime" xml:space="preserve"><value>修改时间</value></data>
+  <data name="ColPerm" xml:space="preserve"><value>权限</value></data>
+  <data name="FolderType" xml:space="preserve"><value>文件夹</value></data>
+  <data name="FileType" xml:space="preserve"><value>文件</value></data>
+  <data name="QueueName" xml:space="preserve"><value>名称</value></data>
+  <data name="QueueStatus" xml:space="preserve"><value>状态</value></data>
+  <data name="QueueProgress" xml:space="preserve"><value>进度</value></data>
+  <data name="QueueSize" xml:space="preserve"><value>大小</value></data>
+  <data name="QueueSource" xml:space="preserve"><value>源路径</value></data>
+  <data name="QueueDest" xml:space="preserve"><value>目标路径</value></data>
+</root>

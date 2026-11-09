@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- TFM/LangVersion/Nullable/ImplicitUsings 见 term/Directory.Build.props -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+
+    <PackageId>QuickTerm.Pty</PackageId>
+    <!-- 同 QuickTerm.Terminal：本族不上 NuGet（2026-11-05 定），IsPackable=false 是终态。 -->
+    <IsPackable>false</IsPackable>
+    <IsAotCompatible>true</IsAotCompatible>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Description>Zero-dependency pseudo-terminal host for .NET 10: ConPTY (Windows 10 1809+) via direct P/Invoke — no shell wrapper process, no third-party package, the OS libraries are the only imports. Windows only today: PtySession.Start throws PlatformNotSupportedException on Linux and macOS because the openpty/posix_spawn versus native forkpty question is still open and a stub would only hide that.</Description>
+    <PackageTags>pty;conpty;pseudoterminal;shell;terminal</PackageTags>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <!-- 内核两颗互不相认（与五族"互相零引用"同一条家规）：PTY 只交字节，不认 Terminal 的任何类型，
+       接线归宿主（QuickTerm.App 与测试册各引两颗）。 -->
+
+</Project>
