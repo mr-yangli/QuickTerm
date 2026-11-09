@@ -2,7 +2,7 @@
 
 **开发中**：VT100/XTerm 终端仿真内核 + ConPTY，目标形态是跨平台的终端 + SSH/SFTP 客户端（对标 Termora）。
 
-从原 QuickNet 单仓拆分出的独立项目。**本族不上 NuGet**，源码随仓库。MIT 协议。
+**本族不上 NuGet**，源码随仓库。MIT 协议。
 
 ## 结构
 
